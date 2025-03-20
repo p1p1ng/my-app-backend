@@ -1,0 +1,36 @@
+// Create user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Firman",
+    "email" : "admin@gmail.com",
+    "password" : "123456",
+    "confPassword" : "123456",
+    "role" : "admin"
+}
+
+###
+//Get atau read all user
+GET http://localhost:5000/users
+
+###
+//Get atau read single user
+GET http://localhost:5000/users/13f8eecd-24de-4b77-a859-103f1ab49896
+
+###
+//Update user
+PATCH http://localhost:5000/users/13f8eecd-24de-4b77-a859-103f1ab49896
+Content-Type: application/json
+
+{
+    "name" : "Rayyan Athar",
+    "email" : "ray@gmail.com",
+    "password" : "",
+    "confPassword" : "",
+    "role" : "user"
+}
+
+###
+//Delete user by 
+DELETE http://localhost:5000/users/
