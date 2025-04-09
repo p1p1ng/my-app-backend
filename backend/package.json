@@ -13,6 +13,7 @@
   "types": "commonjs",
   "dependencies": {
     "argon2": "^0.41.1",
+    "connect-session-sequelize": "^7.1.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -20,5 +21,4 @@
     "mysql2": "^3.13.0",
     "sequelize": "^6.37.6"
   }
-  
 }

@@ -33,4 +33,60 @@ Content-Type: application/json
 
 ###
 //Delete user by 
-DELETE http://localhost:5000/users/
+DELETE http://localhost:5000/users/f58fae34-07d7-4627-a2f0-c58bb5592d40
+
+###
+// Login As User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "ray@gmail.com",
+    "password" : "123456"
+}
+
+###
+// Login As Admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com",
+    "password" : "123456"
+}
+
+###
+// user akun yang aktif
+GET http://localhost:5000/me
+
+###
+//  Logout
+DELETE http://localhost:5000/logout
+
+###
+//Get all product
+GET http://localhost:5000/products
+
+###
+//Get single product
+GET http://localhost:5000/products/2f66bef8-044d-4972-bab1-4ff06df5101b
+
+###
+// Crate data product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name" : "Product 6",
+    "price" : 989
+}
+
+###
+// Update data product
+PATCH http://localhost:5000/products/2f66bef8-044d-4972-bab1-4ff06df5101b
+Content-Type: application/json
+
+{
+    "name" : "Product diperbarui",
+    "price" : 111
+}
